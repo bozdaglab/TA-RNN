@@ -1,0 +1,2 @@
+batch_size,epoch,dropout,l2,cell,hidden_s,embedding_s
+8,50,0.4,0.001, GRU,16,8
