@@ -1,26 +1,26 @@
-### TA-RNN
+# TA-RNN
 In this study, we propose two deep learning architectures based on Recurrent Neural Networks (RNN), namely Time-aware Attention-based RNN (TA-RNN) and TA-RNN-Autoencoder (TA-RNN-AE) for early predicting of clinical outcomes in Electronic Health Record (EHR) at the next visit and multiple visits ahead for patients, respectively. To mitigate the impact of the irregular time intervals between visits, we propose incorporating time embedding of the elapsed times between consecutive visits. For results interpretability, we propose employing a dual-level attention mechanism that operates between visits and features within each visit.
 
-# Time-aware Attention-based RNN (TA-RNN)
+## Time-aware Attention-based RNN (TA-RNN)
 
 ![TA-RNN](https://github.com/bozdaglab/TA-RNN/blob/main/Model.png?raw=true)
 
 
 TA-RNN is a deep learning architecture that comprises of three fundamental parts, namely, time embedding, attention-based RNN, and multi-layer perceptron (MLP). TA-RNN is designed for early predicting of clinical outcome in the EHR at the next visit for patients.
 
-# Time-aware Attention-based RNN AutoEncoder (TA-RNN-AE)
+## Time-aware Attention-based RNN AutoEncoder (TA-RNN-AE)
 
 ![TA-RNN-AE](https://github.com/bozdaglab/TA-RNN/blob/main/Model.png?raw=true)
 
 TA-RNN-AE is a deep learning architecture that comprises of three fundamental parts, namely, time embedding, attention-based RNN autoencoder, and MLP. TA-RNN-AE is designed for early predicting of clinical outcome in the EHR at multiple visits ahead for patients.
 
-# Parameter learning and evaluation metrics
+## Parameter learning and evaluation metrics
 
 To increase the prediction’s sensitivity for both architectures, all trainable parameters for the RNN, RNN autoencoder, and MLP were learned in an integral way using a customized binary cross-entropy loss function to give more weight on predicting future clinical outcome in the EHR, seeking to minimize the false negative cases while predicting future clinical outcome of the visit which leads to increased sensitivity of the predictive model.
   
 RNN cell, number of epochs, batch size, dropout rate, L2 regularization, and hidden size are the hyperparameters that have been tuned. For model evaluation, F2 score and sensitivity were used.
 
-# Datasets and input format
+## Datasets and input format
 
 We evaluated the proposed architectures using three experimental setups. In the first setup, Alzheimer’s Disease Neuroimaging Initiative (ADNI) dataset was utilized to train and test the proposed architectures using the longitudinal multi-modal and the cross-sectional demographic data. In the second setup, the models were trained on the entire ADNI longitudinal and cross-sec-tional data and tested on National Alzheimer’s Coordinating Center (NACC) dataset. In the third setup, the Medical Information Mart for Intensive Care (MIMIC-III) dataset was utilized to train and test the proposed architectures. 
   
@@ -34,7 +34,7 @@ For ADNI and NACC dataset, the training and test longitudinal data format is giv
 
 For MIMIC-III dataset, We carried out preprocessing using identical procedures as employed in the RETAIN method (https://github.com/mp2893/retain) to extract patients’ visits, mortality labels, and time information.
   
- # How to generate pkl files for ADNI data 
+ ## How to generate pkl files for ADNI data 
  
 pkl_files_preperation.ipynb can be used to generate pkl files from raw files (Sample of raw data) with the following assumptions:
   - You have access to ADNI dataset https://adni.loni.usc.edu/, and you already downloaded ADNI_Merge.csv file.
@@ -66,11 +66,11 @@ After running the the code without any errors, following files will be generated
 
  - elapsed_data_test.pkl
  
- # Compitability
+ ## Compitability
  
  All codes are compatible with Tensorflow version 2.14.0, Keras version 2.14.0 and Python 3.11.5.
  
- # How to run TA-RNN
+ ## How to run TA-RNN
  
  To run TA-RNN, you have to have the following files in the same directory:
  
@@ -97,7 +97,7 @@ To change values of hyperparameters, open hp_df.csv and change values. The value
  - embedding_s: integer
  
 
-# How to run TA-RNN-AE
+## How to run TA-RNN-AE
  
  To runn TA-RNN-AE, you have to have the following files in the same directory:
  
