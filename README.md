@@ -47,7 +47,7 @@ pkl_files_preperation.ipynb can be used to generate pkl files from raw files (Sa
   - For TA-RNN, the number of future visits that you would like to predict thier diagnosis is always 1.
 
 
-Sample of longitudinal_data.csv and demographic_data.csv are provided in Raw data sample folder
+Sample of longitudinal_data.csv and demographic_data.csv are provided in Raw data sample folder. To generate longitudinal_data.csv and demographic_data.csv, we carried out preprocessing using identical procedures as employed in the PPAD method (https://academic.oup.com/bioinformatics/article/39/Supplement_1/i149/7210436).
 
 After running the the code without any errors, following files will be generated:
  - longitudinal_data_train.pkl
