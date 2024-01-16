@@ -85,7 +85,7 @@ After running the the code without any errors, following files will be generated
   - elapsed_data_test.pkl
   - hp_df.csv which represents values of hyperparameters that have been tuned
  
-After you put all files in the same directory, open and run TA-RNN.ipynb using Jupyter Notebook. TA-RNN will be trained and tested five times and results will be generated as csv file with the following format (x_y_TA-RNN.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
+After you put all files in the same directory, open and run TA-RNN.ipynb using Jupyter Notebook. TA-RNN will be trained and tested five times and results will be generated as csv file with the following format (x_y_TA-RNN.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction. In addition, for the last trained model, two visulaization plots will be generated for attention weights at the visit level and average attention weight at the feature level across all visits. 
 
 To change values of hyperparameters, open hp_df.csv and change values. The values should be as following:
  - batch_size: integer
@@ -112,7 +112,7 @@ To change values of hyperparameters, open hp_df.csv and change values. The value
   - elapsed_data_test.pkl
   - hp_df.csv which represents values of hyperparameters that have been tuned
  
-After you put all files in the same directory, open and run TA-RNN-AE.ipynb using Jupyter Notebook. TA-RNN-AE will be trained and tested five times and results will be generated as csv file with the following format (x_y_TA-RNN-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction.
+After you put all files in the same directory, open and run TA-RNN-AE.ipynb using Jupyter Notebook. TA-RNN-AE will be trained and tested five times and results will be generated as csv file with the following format (x_y_TA-RNN-AE.csv) where x means the number of visits that have been used to train the model and y means the number of future visits for prediction. In addition, for the last trained model, two visulaization plots will be generated for attention weights at the visit level and average attention weight at the feature level across all visits.
 
 To change values of hyperparameters, open hp_df.csv and change values. The values should be as following:
  - batch_size: integer
