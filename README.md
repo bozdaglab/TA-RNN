@@ -3,14 +3,14 @@ In this study, we propose two deep learning architectures based on Recurrent Neu
 
 ## Time-aware Attention-based RNN (TA-RNN)
 
-![TA-RNN](https://github.com/bozdaglab/TA-RNN/blob/main/Figure1.tiff?raw=true)
+![TA-RNN](https://github.com/bozdaglab/TA-RNN/blob/main/Figure1.png?raw=true)
 
 
 TA-RNN is a deep learning architecture that comprises of three fundamental parts, namely, time embedding, attention-based RNN, and multi-layer perceptron (MLP). TA-RNN is designed for early predicting of clinical outcome in the EHR at the next visit for patients.
 
 ## Time-aware Attention-based RNN AutoEncoder (TA-RNN-AE)
 
-![TA-RNN-AE](https://github.com/bozdaglab/TA-RNN/blob/main/Figure2.tiff?raw=true)
+![TA-RNN-AE](https://github.com/bozdaglab/TA-RNN/blob/main/Figure2.png?raw=true)
 
 TA-RNN-AE is a deep learning architecture that comprises of three fundamental parts, namely, time embedding, attention-based RNN autoencoder, and MLP. TA-RNN-AE is designed for early predicting of clinical outcome in the EHR at multiple visits ahead for patients.
 
