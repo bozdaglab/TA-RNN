@@ -1,4 +1,4 @@
-# TA-RNN: An Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Record
+# TA-RNN: an Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Record
 In this study, we propose two deep learning architectures based on Recurrent Neural Networks (RNN), namely Time-Aware RNN (TA-RNN) and TA-RNN-Autoencoder (TA-RNN-AE) for early predicting of clinical outcomes in Electronic Health Record (EHR) at the next visit and multiple visits ahead for patients, respectively. To mitigate the impact of the irregular time intervals between visits, we propose incorporating time embedding of the elapsed times between consecutive visits. For results interpretability, we propose employing a dual-level attention mechanism that operates between visits and features within each visit.
 
 ## Time-Aware RNN (TA-RNN)
