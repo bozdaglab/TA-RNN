@@ -1,18 +1,20 @@
-# TA-RNN: an Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Record
-In this study, we propose two deep learning architectures based on Recurrent Neural Networks (RNN), namely Time-Aware RNN (TA-RNN) and TA-RNN-Autoencoder (TA-RNN-AE) for early predicting of clinical outcomes in Electronic Health Record (EHR) at the next visit and multiple visits ahead for patients, respectively. To mitigate the impact of the irregular time intervals between visits, we propose incorporating time embedding of the elapsed times between consecutive visits. For results interpretability, we propose employing a dual-level attention mechanism that operates between visits and features within each visit.
+# TA-RNN & TA-RNN-AE: an Attention-based Time-aware Recurrent Neural Network Architecture for Electronic Health Record
+Time-Aware RNN (TA-RNN) and TA-RNN-Autoencoder (TA-RNN-AE) are two deep learning architectures for early predicting of clinical outcomes in Electronic Health Record (EHR) at the next visit and multiple visits ahead for patients, respectively. 
+
+To mitigate the impact of the irregular time intervals between visits, we incorporate time embedding of the elapsed times between consecutive visits. For results interpretability, a dual-level attention mechanism that operates between visits and features within each visit is introduced.
 
 ## Time-Aware RNN (TA-RNN)
 
 ![TA-RNN](https://github.com/bozdaglab/TA-RNN/blob/main/Figure1.png?raw=true)
 
 
-TA-RNN is a deep learning architecture that comprises of three fundamental parts, namely, time embedding, attention-based RNN, and multi-layer perceptron (MLP). TA-RNN is designed for early predicting of clinical outcome in the EHR at the next visit for patients.
+TA-RNN is a deep learning architecture that comprises three fundamental parts, namely, time embedding, attention-based RNN, and multi-layer perceptron (MLP). TA-RNN is designed for early predicting of clinical outcome in the EHR at the next visit for patients.
 
 ## Time-Aware RNN AutoEncoder (TA-RNN-AE)
 
 ![TA-RNN-AE](https://github.com/bozdaglab/TA-RNN/blob/main/Figure2.png?raw=true)
 
-TA-RNN-AE is a deep learning architecture that comprises of three fundamental parts, namely, time embedding, attention-based RNN autoencoder, and MLP. TA-RNN-AE is designed for early predicting of clinical outcome in the EHR at multiple visits ahead for patients.
+TA-RNN-AE is a deep learning architecture that comprises three fundamental parts, namely, time embedding, attention-based RNN autoencoder, and MLP. TA-RNN-AE is designed for early predicting of clinical outcome in the EHR at multiple visits ahead for patients.
 
 ## Parameter learning and evaluation metrics
 
@@ -66,7 +68,7 @@ After running the the code without any errors, following files will be generated
 
  - elapsed_data_test.pkl
  
- ## Compitability
+ ## Compatibility
  
  All codes are compatible with Tensorflow version 2.14.0, Keras version 2.14.0 and Python 3.11.5.
  
