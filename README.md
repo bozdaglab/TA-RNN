@@ -3,6 +3,8 @@ Time-Aware RNN (TA-RNN) and TA-RNN-Autoencoder (TA-RNN-AE) are two deep learning
 
 To mitigate the impact of the irregular time intervals between visits, we incorporate time embedding of the elapsed times between consecutive visits. For results interpretability, a dual-level attention mechanism that operates between visits and features within each visit is introduced.
 
+For more information, please read the [TA-RNN paper] (https://academic.oup.com/bioinformatics/article/40/Supplement_1/i169/7700905)
+
 ## Time-Aware RNN (TA-RNN)
 
 ![TA-RNN](https://github.com/bozdaglab/TA-RNN/blob/main/Figure1.png?raw=true)
